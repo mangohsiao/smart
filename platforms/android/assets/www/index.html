@@ -25,25 +25,55 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css">
         <title>Hello World</title>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile-1.4.4.min.js"></script>
         <script type="text/javascript" src="js/dbCachePlugin.js"></script>
+        <script type="text/javascript" src="js/MonitorPlugin.js"></script>
     </head>
     <body>
+        <div data-role="page" id="page_01">
+            <div data-role="header">
+                <h1>Smart Home</h1>
+            </div>
 
-        <div>
-            <button onclick="callQuery()">查询数据库</button>
-        </div>
-        <div id="div_result">
-            结果
-        </div>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+            <div data-role="content">
+                
+                <div>
+                    <a href="#page_02" onclick="callQuery()" data-role="button">家电控制</a>
+                </div>
+                <div>
+                    <button onclick="testMonitor()" data-role="button">视频监控</button>
+                </div>
+                <div>
+                    <button onclick="" data-role="button">安防警报</button>
+                </div>
+                <div>
+                    <button onclick="" data-role="button">设置</button>
+                </div>
+
+            </div>
+
+            <div data-role="footer">
+                <h1>by Mango.hsiao</h1>
             </div>
         </div>
+
+        <div data-role="page" id="page_02">
+            <div data-role="header" id="page_02_header">
+                <h1>Smart Home</h1>
+            </div>
+            <div data-role="content">
+                <div id="div_result">
+                    结果
+                </div>
+            <div>
+            <div data-role="footer">
+                <h1>by Mango.hsiao</h1>
+            </div>
+        </div>
+
     </body>
 </html>

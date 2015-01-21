@@ -4,6 +4,9 @@
     <feature name="DbCachePlugin">
         <param name="android-package" value="com.mango.smarthome.plugin.dbcache.DbCachePlugin" />
     </feature>
+    <feature name="MonitorPlugin">
+        <param name="android-package" value="com.mango.smarthome.plugin.monitor.MonitorPlugin" />
+    </feature>
     <name>SmartHome</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
